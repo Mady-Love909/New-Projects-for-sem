@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSGYM -The Management for GYM Utilities</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             background-color: bisque;
             padding: 20px;
         }
-        .navheading{
+
+        .navheading {
             flex-direction: column;
         }
+
         .navheading small {
             padding-left: 20px;
             font-family: EngraversGothic BT;
             font-size: 15px;
             text-transform: uppercase;
         }
+
         ul {
             display: flex;
             list-style: none;
@@ -41,7 +45,7 @@
             color: black;
             /* font-family: Geometr415 Blk BT; */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 1.1rem;
+            font-size: 1.1rem;
         }
 
         ul>h1 {
@@ -50,21 +54,34 @@ font-size: 1.1rem;
             font-family: Geometr415 Blk BT;
         }
 
-        .maincontent{
+        .maincontainer {
+            height: 80vh;
             background-color: black;
-            color:white
         }
-        .maincontent > h1{
+
+        .maincontent {
+
+            color: white
+        }
+
+        .maincontent>h1 {
             font-family: Geometr415 Blk BT;
             font-size: 10rem;
-            animation: mayank 0.4s ;
+            animation: mayank 0.4s;
         }
 
 
         @keyframes mayank {
-            0%{
+            0% {
                 transform: scaleX(-100px);
             }
+        }
+        .carousel{
+            width: 100vh;
+        }
+        .images{
+            width: 100vh;
+            margin: auto;
         }
     </style>
 </head>
@@ -87,6 +104,12 @@ font-size: 1.1rem;
     <div class="maincontainer">
         <div class="maincontent">
             <h1>MSGYM</h1>
+        </div>
+        <div class="carousel">
+            <img src="images/gym_1.jpg" alt="" class="images">
+            <img src="images/gym_1.jpg" alt="" class="images">
+            <img src="images/gym_1.jpg" alt="" class="images">
+            <img src="images/gym_1.jpg" alt="" class="images">
         </div>
     </div>
     <script></script>
