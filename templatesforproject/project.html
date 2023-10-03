@@ -78,10 +78,55 @@
         }
         .carousel{
             width: 100vh;
+            display: inline-flex;
+            /* flex-direction: column; */
+
         }
         .images{
-            width: 100vh;
-            margin: auto;
+            width: 100vw;
+            
+            display: block;
+        }
+        .carouselbtn{
+            display: block;
+        }
+        .buttons{
+            width: 100px;
+            height: 100px;
+            font-family: fantasy;
+            margin: 0px 10px;
+            font-size: 80px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: lighter;
+            
+        }
+        
+        #rightbtn{
+            position: absolute;
+            transform: translate(-10px,400px);
+            right: 0;
+        }
+        #rightbtn:hover{
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        #leftbtn{
+            position: absolute;
+            transform: translate(10px,400px);
+            
+
+            left: 0;
+        }
+        #leftbtn:hover{
+            background-color: rgba(0, 0, 0, 0.7);
+
+        }
+        .footercontainer{
+            width: 100vw;
+            height: 20vh;
+            background-color: darkblue;
         }
     </style>
 </head>
@@ -106,12 +151,24 @@
             <h1>MSGYM</h1>
         </div>
         <div class="carousel">
+            <div class="carouselbtn">
+                <span><button id="leftbtn" class="buttons">❮</button></span>
+                <span><button id="rightbtn" class="buttons">❯</button></span>
+            </div>
             <img src="images/gym_1.jpg" alt="" class="images">
             <img src="images/gym_1.jpg" alt="" class="images">
             <img src="images/gym_1.jpg" alt="" class="images">
             <img src="images/gym_1.jpg" alt="" class="images">
         </div>
     </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+    <div class="footercontainer"></div>
     <script></script>
 </body>
 
