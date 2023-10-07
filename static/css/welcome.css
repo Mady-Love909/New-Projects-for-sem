@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00308F;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00308F;
+}
+
+.start {
+    display: flex;
+    justify-content: space-around  ;
+    background-color: white;
+    width: 800px;
+    height: 100vh;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+
+}
+
+.content {
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    width: 1200px;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    
+}
+.content h1{
+    font-size: 4rem;
+}
+.content h1,h2 {
+    text-align: center;
+}
+
+.btn {
+    /* position: absolute;
+    left: 350px;
+    bottom: 86px;
+    */
+    font-size: 20px;
+}
+.btn a:hover{
+    color: #00BFFF;
+}
+
+.inputbox{
+    width: 376px;
+    height: 391px;
+   border: 2px solid white;
+   border-radius: 20px;
+   transform: translate(177px, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items:center ;
+   
+}
+.inputbox h1{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 0px;
+}
+.inputusername , .inputpasswd , .inputbutton,.smallfont{
+    display: flex;
+    justify-content: center;
+    padding:10px 0px;
+}
+.inputusername input , .inputpasswd input {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.inputbutton button{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 8px;
+    text-transform: uppercase;
+}
+.anotherlogins{
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+   width: auto;
+    justify-content: center;
+}
+
+.form-control p{
+    padding: 10px;
+    text-align: center;
+}
+
+.smallfont{
+    font-size: 12px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+.form-button {
+    padding: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Arial Rounded MT';
+  }
+
+@media screen and (max-width:500px) {
+   .container{
+    flex-direction: column;
+    width: 800px;
+    height: 900px;
+    justify-content: flex-start;
+    
+   }
+   .start{
+    width: 376px;
+    height: 291px;
+   }
+
+   .start img{
+    width: 280px;
+   }
+
+   .start a{
+    font-size: 20px;
+   }
+   .start small{
+    font-size: 12px;
+   }
+   .content{
+    width: 500px;
+    height: 400px;
+   }
+   .content h1{
+    font-size: 25px;
+    
+   }
+   .content h2{
+    font-size: 20px;
+    
+   }
+   
+
+   .inputbox {
+    width: 200px;
+    height: 400px;
+    transform: translate(235px, 10px);
+   }
+   .form-control h1{
+    font-size: 18px;
+    padding:0px
+   }
+}

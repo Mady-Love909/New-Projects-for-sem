@@ -1,0 +1,92 @@
+{% extends 'base2.html' %}
+
+{% block style %}
+.form-inputs{
+  padding:20px;
+}
+.form-control{
+  display:inline-flex;
+width:90%;
+
+}
+
+
+.card-group {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0px 20px;
+}
+
+{% endblock style %}
+{% block body %}
+<div class="search_company">
+  <form action="/infocomp" method="get">
+    <!-- <input type="text" name="name" id="name" placeholder="Search Companies"> -->
+    <!-- <label for="city" class="form-label">City</label> -->
+    <div class="form-inputs">
+      <input class="form-control" list="datalistOptions" id="comp" name="comp" placeholder="Search companies">
+    <datalist id="datalistOptions">
+      <option value="Apple">
+      <option value="Google">
+      <option value="IBM">
+      
+
+    </datalist>
+
+    <button type="submit" class="btn btn-primary" > <img src="static/images/icons8-search-30.png" alt="" width="25px"></button>
+    </div>
+
+
+
+    <div class="card-group">
+      <div class="card">
+        <img src="static/images/cp3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Google</h5>
+          <p class="card-text">1st Floor, 3 North Avenue, Maker Maxity, Bandra Kurla Complex, Bandra East, Mumbai-400005
+          </p>
+          <p>Website: www.google.com</p>
+          <p>Contact: +91-22-6611-7200</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <a href="/google" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/images/cp4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <p class="card-text">Address: Hi-life mall, 3rd Floor, Office no 39, P.M. Road, Santacruz West, Mumbai-400054
+          </p>
+          <P>Website: www.apple.com</p>
+          <p>Contact: 022 6530 9555
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <a href="/apple" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/images/cp1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IBM</h5>
+          <p class="card-text">Address: Nirlon Knowledge park, Western Express Highway, Goregaon East, Mumbai-400063</p>
+          <p>Website: www.ibm.com</p>
+          <p>Contact: +91 99673 01408</p>
+          
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <a href="/ibm" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+
+
+{% endblock body %}
+{% block js %}
+  let card = document.getElementsByClassName("card")
+
+  for(let i=0,i<4,i++){
+    card[i].style.padding = "0px 10px";
+  }
+{% endblock js %}
+

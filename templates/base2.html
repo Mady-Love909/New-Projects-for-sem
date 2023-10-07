@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK-Placements | HomePage</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .container{
+            padding: 0;
+            
+        }
+        .container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
+            max-width: 100vw;}
+
+        
+            {% block style %}
+            {% endblock style %}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul>
+                    <div class="logo">
+                        <img src="static/images/MiniSizedLogo.jpg" alt="">
+
+                    </div>
+                    <div class="center">
+
+                        <li><a href="/home"><img src="static/images/home.png" alt="" id="homeimg" onclick="change()"></a>
+                        </li>
+                        <li><a href="/infocomp"><img src="static/images/about.png" alt="" id="aboutimg" ></a></li>
+                        <li><a href="/aboutus"><img src="static/images/contact.png" alt="" id="contactimg"></a></li>
+                        <li><a href="#"><img src="static/images/community.png" alt="" id="communityimg"></a></li>
+                    </div>
+                </ul>
+
+            </nav>
+        </div>
+        {% block body %}{% endblock body %}
+    </div>
+    <script>
+
+        {% block js %} {% endblock js %}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
