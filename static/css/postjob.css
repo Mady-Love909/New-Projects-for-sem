@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgblue: rgb(0, 115, 255);
+    --bgdarkblue: rgb(0, 31, 70);
+}
+
+.submitcontainer {
+    width: 100vw;
+    height: auto;
+    background-color: var(--bgdarkblue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Heading {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.Heading>span {
+    font-size: 3rem;
+}
+
+.submitform {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.formlayout {
+    width: 80vw;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.formlayout > input{
+    width: 600px;
+    padding: 14px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.imgupload {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/images/icons8-plus-150.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.imgupload>input {
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+.postbtn{
+    width: 450px;
+    padding: 14px;
+    font-size: 17px;
+    margin: 10px;
+    background-color: var(--bgblue);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.postbtn:hover{
+    background-color: var(--bgdarkblue);
+}

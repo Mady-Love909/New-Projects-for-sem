@@ -12,6 +12,8 @@ urlpatterns = [
     path('apple',views.apple,name="apple"),
     path('ibm',views.ibm,name="ibm"),
     path('details',views.details,name="details"),
+    path('register',views.register,name = "register"),
+    path('postjob',views.postjob,name = "postjob")
     
 ]
 

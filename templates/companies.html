@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block linkcss %} <link rel="stylesheet" href="static/css/company.css">{% endblock linkcss %}
+
+{% block body %}
+<div class="searchbar">
+    <form action="#">
+        <input type="search" name="search" id="" class="input-controls" placeholder="Search Companies ..eg(Google)">
+        <button class="searchbtn">search</button>
+    </form>
+</div>
+<div class="companycategories">
+    <div class="row1">
+        <div class="card">
+            <div class="cardimage googleimg"></div>
+            <div class="cardtitle">Google</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+        </div>
+        
+        <div class="card">
+            <div class="cardimage appleimg"></div>
+            <div class="cardtitle">Apple</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+        
+        <div class="card">
+            <div class="cardimage ibmimg"></div>
+            <div class="cardtitle">IBM</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+    </div>
+    <div class="row2">
+        <div class="card">
+            <div class="cardimage microsoftimg"></div>
+            <div class="cardtitle">Microsoft</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+        </div>
+        
+        <div class="card">
+            <div class="cardimage dellimg"></div>
+            <div class="cardtitle">Dell</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+        
+        <div class="card">
+            <div class="cardimage hclimg"></div>
+            <div class="cardtitle">HCL</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+    </div>
+    <div class="row3">
+        <div class="card">
+            <div class="cardimage infosysimg"></div>
+            <div class="cardtitle">Infosys</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+        </div>
+        
+        <div class="card">
+            <div class="cardimage tcsimg"></div>
+            <div class="cardtitle">TCS</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+        
+        <div class="card">
+            <div class="cardimage wiproimg"></div>
+            <div class="cardtitle">Wipro</div>
+            <div class="cardsummary">Summary</div>
+            <div><button class="cardbtn">More Info</button></div>
+
+        </div>
+    </div>
+    
+</div>
+{% endblock body %}

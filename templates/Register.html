@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>{block title} Register {endblock title} </title> -->
+    <title>Register</title>
+    <style>
+        :root {
+            --bgblue: rgb(0, 115, 255);
+            --bgdarkblue: rgb(0, 31, 70);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bgblue);
+        }
+
+        .registercontainer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register {
+            width: 50vw;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+            border: 4px solid var(--bgdarkblue);
+        }
+
+        .register::-webkit-scrollbar {
+            display: none;
+        }
+
+        .register>h1 {
+            font-family: 'Arial Rounded MT';
+            /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+            color: var(--bgblue);
+            font-size: 2.4rem;
+            padding: 0 0 40px 0;
+        }
+
+        .input-controls {
+            width: 400px;
+            padding: 12px;
+            margin: 10px;
+        }
+        .register>div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .register>div>label{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .signupbtn{
+            width: 300px !important;
+            margin: auto;
+            background-color: var(--bgblue);
+            border: none;
+            color: white;
+            border: 2px solid white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        .register>div>small{
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0 0 20px 0;
+        }
+        .signupbtn:hover{
+            color: var(--bgblue);
+            background-color: white;
+            border: 2px solid var(--bgblue);
+
+        }
+        .backbtn{
+            width: 100px;
+            margin: 20px;
+            padding: 12px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/"><button class="backbtn"><img src="/static/images/icons8-back-button-80.png" alt="Back"></button></a>
+    <div class="registercontainer">
+        <form action="#">
+            <div class="register">
+                <h1>Registeration Form</h1>
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="input-controls" required>
+                    <label for="name">Father Name</label>
+                    <input type="text" id="fathername" class="input-controls" required>
+                    <label for="name">Mother Name</label>
+                    <input type="text" id="mothername" class="input-controls" required>
+                    <label for="name">Applicant's email ID</label>
+                    <input type="text" id="email" class="input-controls" required>
+                    <label for="name">Applicant's Date Of Birth</label>
+                    <input type="date" id="dob" class="input-controls">
+                    <label for="name">Applicant's Address 1</label>
+                    <input type="text" id="address1" class="input-controls" required>
+                    <label for="name">Applicant's Address 2</label>
+                    <input type="text" id="address2" class="input-controls" required>
+                    
+                    <small ><input type="checkbox" name="docselect" id="">  By accpeting this we consider that you are accpeted our all T&C's,<br> if you have any doubt email us on <a href="#">info@skplacement.com</a></small>
+                    <button class="signupbtn input-controls" >Register</button>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

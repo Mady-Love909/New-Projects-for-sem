@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SK-Placements | {% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="static/css/myhome.css">
+    {% block linkcss %}{% endblock linkcss %}
 </head>
 <body>
     <div class="container">
@@ -25,7 +26,7 @@
                         <input type="text" name="password" id="password">
                         <a href="#" id="forgotpassword">Forgot Password ? </a>
                         <button id="modalformbtn">Sign in</button>
-                        <small>If you don't have registered yet <a href="#" id="signupbtn">Click here</a></small>
+                        <small>If you don't have registered yet <a href="/register" id="signupbtn" >Click here</a></small>
 
                     </div>
                 </form>
@@ -44,14 +45,14 @@
             </div>
             <div class="navs">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="companies.html">Companies</a>
+                    <a href="/infocomp">Companies</a>
 
                 </li>
                 <li>
-                    <a href="About.html">About</a>
+                    <a href="/aboutus">About</a>
 
                 </li>
                 <li>
@@ -59,7 +60,7 @@
 
                 </li>
                 <li>
-                    <button class="btn1" id="btn1">Join now</button><span class="sep">|</span><button class="btn2"
+                    <a href="/register" style="    border: none;"><button class="btn1" id="btn1">Join now</button></a><span class="sep">|</span><button class="btn2"
                         id="btn2">Sign
                         in</button>
                 </li>

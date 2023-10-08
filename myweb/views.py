@@ -31,10 +31,16 @@ def loginform(request):
     return render(request,'loginform.html')
 
 def aboutus(request):
-    return render(request,'aboutus.html')
+    return render(request,'about.html')
 
 def infocomp(request):
-    return render(request,'company.html')
+    return render(request,'companies.html')
+
+def register(request):
+    return render(request,'Register.html')
+
+def postjob(request):
+    return render(request,'postjob.html')
 
 def signin(request):
     return render(request,'signin.html')

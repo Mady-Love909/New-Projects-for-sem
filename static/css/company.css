@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgblue: rgb(0, 115, 255);
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bgblue);
+    justify-content: space-around;
+}
+
+.navs {
+    display: flex;
+    list-style: none;
+}
+
+.navs>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 12px;
+}
+
+.navs>li>a:hover {
+    color: black;
+    border-bottom: 2.4px solid white;
+}
+
+.Heading {
+    font-family: 'Arial Rounded MT';
+    color: white;
+    font-size: 1.2rem;
+}
+
+.sep {
+    color: white;
+    font-size: 25px;
+}
+
+.btn1 {
+    margin: 0px 10px;
+
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    
+}
+
+.btn1:hover {
+    background-color: var(--bgblue);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn2 {
+    margin: 0px 10px;
+    height: 30px;
+    width: 80px;
+    background-color: var(--bgblue);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    opacity: 0.8;
+}
+
+.searchbar {
+    margin: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.input-controls{
+    width: 50vw;
+    height: 20px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.searchbtn{
+    padding: 12px;
+    border: 2px solid var(--bgblue);
+
+    background-color: var(--bgblue);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+.searchbtn:hover{
+    border: 2px solid var(--bgblue);
+    background-color: white;
+    color: var(--bgblue);
+}
+.companycategories{
+    margin: 10px;
+width: 100vw;
+display: flex;
+height: auto;
+flex-direction: column;
+align-items: center;
+}
+.row1{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin: 20px;
+}
+.row2{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+.row3{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    background-color:rgb(189, 182, 182);
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+.cardimage{
+    width: 350px;
+    height: 250px;
+    background-color: black;
+}
+.cardtitle{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    color: var(--bgblue);
+}
+.cardsummary{
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+
+}
+.cardbtn{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid var(--bgblue);
+    background-color: var(--bgblue);
+    color: white;
+    cursor: pointer;
+}
+.cardbtn:hover{
+    border: 1px solid var(--bgblue);
+    background-color: white;
+    color: var(--bgblue);
+
+}
+.googleimg{
+    background-image: url('/static/images/Google.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ibmimg{
+    background-image: url('/static/images/IBM.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appleimg{
+    background-image: url('/static/images/Apple.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.microsoftimg{
+    background-image: url('/static/images/microsoft.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dellimg{
+    background-image: url('/static/images/Dell.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hclimg{
+    background-image: url('/static/images/HCL.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wiproimg{
+    background-image: url('/static/images/wipro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tcsimg{
+    background-image: url('/static/images/tcs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infosysimg{
+    background-image: url('/static/images/infosys.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
