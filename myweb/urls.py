@@ -2,8 +2,8 @@ from django.urls import path
 from myweb import views
 
 urlpatterns = [
-    path('',views.welcome,name="welcome"),
-    path('home',views.home,name="home"),
+    # path('',views.welcome,name="welcome"),
+    path('',views.home,name="home"),
     path('loginform',views.loginform,name="loginform"),
     path('aboutus',views.aboutus,name="aboutus"),
     path('infocomp',views.infocomp,name="infocomp"),

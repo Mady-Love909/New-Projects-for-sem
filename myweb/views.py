@@ -4,11 +4,11 @@ from myweb.models import Dbcontact
 
 # Create your views here.
 
-def welcome(request):
-    return render(request,'welcome.html')
+# def welcome(request):
+#     return render(request,'welcome.html')
 
 def home(request):
-    return render(request,'homepage.html')
+    return render(request,'mainhomepage.html')
 
 def loginform(request):
     if request.method == "POST":
