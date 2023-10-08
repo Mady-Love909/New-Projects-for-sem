@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSGYM | HOME</title>
+    <title>New HTML</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
@@ -13,31 +13,35 @@
             padding: 0;
         }
 
+        body {
+            background-color: #163030;
 
-        .container {
-            width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            
         }
 
+        /* Our Main container Starts from here */
+        .maincontainer {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar css */
         .navbar {
             width: 100vw;
-            height: 120px;
+            height: 100px;
             background-image: linear-gradient(to right, #163030, #1f4f4f, #1b8383, #319999, #32bfbf);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             border-bottom: 2px solid white;
-            padding: 10px;
+
         }
 
         .navbar>ul>h1 {
             font-family: Geometr415 Blk BT;
             color: white;
-            font-size: 2.7rem;
+            font-size: 2.3rem;
             border-bottom: 1px solid white;
             text-align: center;
             /* margin: 10px; */
@@ -45,7 +49,7 @@
 
         .navbar>ul>small {
             font-family: EngraversGothic BT;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: white;
         }
 
@@ -86,8 +90,9 @@
 
         }
 
+        /* Maincontent css */
         .maincontent {
-            width: 1284px;
+            width: 97vw;
             height: auto;
             display: flex;
             justify-content: center;
@@ -106,7 +111,7 @@
         }
 
         .footer {
-            width: 100vw;
+            width: 98.8vw;
             background-color: #08081c;
             padding: 20px;
             color: white;
@@ -114,14 +119,15 @@
         }
 
         .gymcategories {
-            width: 1200px;
+            width: 90vw;
             height: auto;
             display: flex;
+            margin-bottom: 20px;
         }
 
         .card {
-            width: 600px;
-            height: 400px;
+            width: 500px;
+            height: auto;
             background-color: white;
             margin: 10px;
             border-radius: 20px;
@@ -132,9 +138,41 @@
         }
 
         .cardimg {
-            width: 100px;
-            height: 80px;
+            width: 250px;
+            height: 300px;
+            background-image: url('images/card2pic.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
+        }
+
+        .img1 {
+            background-image: url('images/card1pic.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img2 {
+            background-image: url('images/card2pic.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img3 {
+            background-image: url('images/card3pic.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img4 {
+            background-image: url('images/card4pic.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .cardtitle {
@@ -177,11 +215,28 @@
         .carousel {
             padding: 20px;
         }
+
+        .review{
+            width: 98.8vw;
+            height: 800px;
+            background-color: #08081c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .review>img{
+            width: 600px;
+            margin: 20px;
+        }
+        .review>h1{
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="maincontainer">
         <div class="navbar">
             <ul>
                 <h1>MSGYM</h1>
@@ -197,24 +252,44 @@
         </div>
         <div class="maincontent">
 
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/gym_1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/gym_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/gym_3.jpg" class="d-block w-100" alt="...">
+                        <img src="images/gym_4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -223,34 +298,44 @@
 
             <div class="gymcategories">
                 <div class="card">
-                    <div class="cardimg"></div>
-                    <div class="cardtitle">CARD TITLE</div>
-                    <div class="cardsummary">summary</div>
+                    <div class="cardimg img1"></div>
+                    <div class="cardtitle">CARDIO</div>
+                    <div class="cardsummary">Lorem ipsum dolor sit amet.</div>
                     <div><button class="cardbtn">More info</button></div>
 
                 </div>
                 <div class="card">
-                    <div class="cardimg"></div>
-                    <div class="cardtitle">CARD TITLE</div>
-                    <div class="cardsummary">summary</div>
+                    <div class="cardimg img2"></div>
+                    <div class="cardtitle">YOGA</div>
+                    <div class="cardsummary">Lorem ipsum dolor sit amet.</div>
                     <div><button class="cardbtn">More info</button></div>
 
                 </div>
                 <div class="card">
-                    <div class="cardimg"></div>
-                    <div class="cardtitle">CARD TITLE</div>
-                    <div class="cardsummary">summary</div>
+                    <div class="cardimg img3"></div>
+                    <div class="cardtitle">WEIGHTLIFT</div>
+                    <div class="cardsummary">Lorem ipsum dolor sit amet.</div>
                     <div><button class="cardbtn">More info</button></div>
                 </div>
                 <div class="card">
-                    <div class="cardimg"></div>
-                    <div class="cardtitle">CARD TITLE</div>
+                    <div class="cardimg img4"></div>
+                    <div class="cardtitle">PERSONAL <br>TRAINER</div>
                     <div class="cardsummary">summary</div>
                     <div><button class="cardbtn">More info</button></div>
 
                 </div>
             </div>
 
+        </div>
+        <div class="review">
+            <img src="images/gymtrainer.jpg" alt="">
+            <div class="stars">
+            <img src="images/icons8-star-50.png" alt="">
+            <img src="images/icons8-star-50.png" alt="">
+            <img src="images/icons8-star-50.png" alt="">
+
+            </div>
+            <h1>We Have The Best Trainer Will Teach You</h1>
         </div>
         <div class="footer">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corrupti nisi pariatur aperiam libero eaque
